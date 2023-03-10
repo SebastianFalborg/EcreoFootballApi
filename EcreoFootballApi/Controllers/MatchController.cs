@@ -115,6 +115,6 @@ public class MatchController : ControllerBase
             }
         };
 
-        return new List<Match> { match1 };
+        return new List<Match> { match1, match2 };
     }
 }
