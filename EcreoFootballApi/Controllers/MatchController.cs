@@ -27,7 +27,11 @@ public class MatchController : ControllerBase
                 },
                 new()
                 {
-                    Name = "Rasmus",
+                    Name = "Sebastian",
+                },
+                new()
+                {
+                    Name = "Kent",
                 },
             }
         };
@@ -38,11 +42,11 @@ public class MatchController : ControllerBase
             {
                 new()
                 {
-                    Name = "Sebastian",
+                    Name = "Andreas",
                 },
                 new()
                 {
-                    Name = "Gorm",
+                    Name = "Thomas",
                 },
             }
         };
@@ -55,62 +59,62 @@ public class MatchController : ControllerBase
                 new()
                 {
                     Order = 1,
-                    BlueTeam = teamA,
-                    BlueTeamScore = 8,
-                    RedTeam = teamB,
-                    RedTeamScore = 10
+                    BlueTeam = teamB,
+                    BlueTeamScore = 10,
+                    RedTeam = teamA,
+                    RedTeamScore = 7
                 },
                 new()
                 {
                     Order = 2,
-                    BlueTeam = teamA,
-                    BlueTeamScore = 11,
-                    RedTeam = teamB,
-                    RedTeamScore = 9
+                    BlueTeam = teamB,
+                    BlueTeamScore = 13,
+                    RedTeam = teamA,
+                    RedTeamScore = 15
                 },
                 new()
                 {
                     Order = 3,
-                    BlueTeam = teamA,
-                    BlueTeamScore = 3,
-                    RedTeam = teamB,
+                    BlueTeam = teamB,
+                    BlueTeamScore = 4,
+                    RedTeam = teamA,
                     RedTeamScore = 10
                 },
             }
         };
         
-        var match2 = new Match
-        {
-            Date = DateTime.Parse("10/03/2023 14:00"),
-            Games = new List<Game>
-            {
-                new()
-                {
-                    Order = 1,
-                    BlueTeam = teamA,
-                    BlueTeamScore = 10,
-                    RedTeam = teamB,
-                    RedTeamScore = 5
-                },
-                new()
-                {
-                    Order = 2,
-                    BlueTeam = teamA,
-                    BlueTeamScore = 10,
-                    RedTeam = teamB,
-                    RedTeamScore = 8
-                },
-                new()
-                {
-                    Order = 3,
-                    BlueTeam = teamA,
-                    BlueTeamScore = 7,
-                    RedTeam = teamB,
-                    RedTeamScore = 10
-                },
-            }
-        };
+        // var match2 = new Match
+        // {
+        //     Date = DateTime.Parse("10/03/2023 14:00"),
+        //     Games = new List<Game>
+        //     {
+        //         new()
+        //         {
+        //             Order = 1,
+        //             BlueTeam = teamA,
+        //             BlueTeamScore = 10,
+        //             RedTeam = teamB,
+        //             RedTeamScore = 5
+        //         },
+        //         new()
+        //         {
+        //             Order = 2,
+        //             BlueTeam = teamA,
+        //             BlueTeamScore = 10,
+        //             RedTeam = teamB,
+        //             RedTeamScore = 8
+        //         },
+        //         new()
+        //         {
+        //             Order = 3,
+        //             BlueTeam = teamA,
+        //             BlueTeamScore = 7,
+        //             RedTeam = teamB,
+        //             RedTeamScore = 10
+        //         },
+        //     }
+        // };
 
-        return new List<Match> { match1, match2 };
+        return new List<Match> { match1 };
     }
 }
