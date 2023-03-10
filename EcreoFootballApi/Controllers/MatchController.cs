@@ -49,7 +49,7 @@ public class MatchController : ControllerBase
 
         var match1 = new Match
         {
-            Date = DateTime.Now.AddDays(-1),
+            Date = DateTime.Parse("10/03/2023 11:45"),
             Games = new List<Game>
             {
                 new()
@@ -81,30 +81,30 @@ public class MatchController : ControllerBase
         
         var match2 = new Match
         {
-            Date = DateTime.Now.AddDays(-2),
+            Date = DateTime.Parse("10/03/2023 14:00"),
             Games = new List<Game>
             {
                 new()
                 {
                     Order = 1,
                     BlueTeam = teamA,
-                    BlueTeamScore = 8,
+                    BlueTeamScore = 10,
                     RedTeam = teamB,
-                    RedTeamScore = 10
+                    RedTeamScore = 5
                 },
                 new()
                 {
                     Order = 2,
                     BlueTeam = teamA,
-                    BlueTeamScore = 11,
+                    BlueTeamScore = 10,
                     RedTeam = teamB,
-                    RedTeamScore = 9
+                    RedTeamScore = 8
                 },
                 new()
                 {
                     Order = 3,
                     BlueTeam = teamA,
-                    BlueTeamScore = 3,
+                    BlueTeamScore = 7,
                     RedTeam = teamB,
                     RedTeamScore = 10
                 },
